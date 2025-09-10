@@ -1,0 +1,116 @@
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: linear-gradient(135deg, #f0f4f8, #e6ebf2);
+  color: #2d2d2d;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main Container */
+.container {
+  background: #ffffff;
+  max-width: 550px;
+  width: 100%;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-3px);
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #1a1a1a;
+  letter-spacing: -0.5px;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-top: 18px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-top: 8px;
+  border: 1.5px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.25s ease;
+}
+
+input:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 25px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
+  letter-spacing: 0.5px;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.25);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* Result Display */
+#total {
+  margin-top: 30px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  color: #2563eb;
+  background: #f0f6ff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Small Info Text */
+.note {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 12px;
+}
